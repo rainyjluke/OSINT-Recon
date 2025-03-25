@@ -1,0 +1,70 @@
+# OSINT Recon Toolkit
+
+## Overview
+OSINT Recon Toolkit is a powerful Python-based reconnaissance tool designed for cybersecurity researchers, ethical hackers, and information gathering professionals. This toolkit provides a range of OSINT (Open-Source Intelligence) capabilities to collect and analyze publicly available information about domains, IP addresses, social media profiles, and potential data breaches.
+
+## Features
+- **WHOIS Lookup**: Retrieve domain registration information
+- **Shodan Scan**: Perform network/IP reconnaissance
+- **DNS Lookup**: Resolve domain to IP addresses
+- **Social Media OSINT**: Cross-platform username searching
+- **Dark Web Monitoring**: Search for mentions across dark web sources
+- **HIBP (Have I Been Pwned) Check**: Verify email breach status
+
+## Prerequisites
+- Python 3.8+
+- API Keys:
+  - Shodan API Key
+  - HIBP (Have I Been Pwned) API Key
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/osint-recon-toolkit.git
+cd osint-recon-toolkit
+```
+
+2. Install required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Create a `.env` file in the project root with your API keys:
+```
+SHODAN_API_KEY=your_shodan_api_key
+HIBP_API_ENV=your_hibp_api_key
+```
+
+## Usage
+Run the tool:
+```bash
+python osint_toolkit.py
+```
+
+Follow the interactive menu to perform various OSINT tasks.
+
+## Disclaimer
+This tool is strictly for educational and authorized research purposes. Unauthorized use of this tool to gather intelligence without proper consent is unethical and potentially illegal.
+
+## Legal and Ethical Considerations
+- Always obtain proper authorization before conducting reconnaissance
+- Respect privacy laws and ethical guidelines
+- Use this tool responsibly and legally
+
+## Contributing
+Contributions, issues, and feature requests are welcome. Feel free to check the issues page.
+
+## Requirements File (requirements.txt)
+```
+python-whois
+requests
+python-dotenv
+beautifulsoup4
+shodan
+```
+
+## Security Notes
+- Implements input sanitization to prevent injection attacks
+- Uses environment variables for secure API key management
+- Includes logging for tracking tool usage
